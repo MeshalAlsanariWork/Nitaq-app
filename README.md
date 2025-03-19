@@ -94,9 +94,9 @@ We welcome contributions! Feel free to submit pull requests or report any issues
 
 ## 💡 Contributors
 
-- **مشعل السناري**
-- **منار الشيخ**
-- **منيره الزومان**
-- **تهاني العتيبي**
-- **جمانه القرشي**
+- **Meshal Alsanari**
+- **Manar AlShaykh**
+- **Munirah AlZuman**
+- **Tahani AlOtaibi**
+- **Jumanah AlQurashi**
 
