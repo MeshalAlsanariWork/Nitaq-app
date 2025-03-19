@@ -80,8 +80,14 @@ Analyzed in `Nitaq_EDA.ipynb`.Key insights derived from real estate trends, serv
 
 - **Live Demo**: [Nitaq](https://nitaq-app-demo.streamlit.app)
 - **GitHub Repository**: [Nitaq-Property-Finder](https://github.com/MeshalAlsanariWork/Nitaq_app)
+- **Data**: [Bus Stop](https://www.kaggle.com/datasets/meshalalsanari/riyadh-bus-stop-stations/data)
+- **Data**: [Cafes and Bakeries](https://www.kaggle.com/datasets/meshalalsanari/riyadh-cafes-and-bakeries-data)
+- **Data**: [Entertainment](https://www.kaggle.com/datasets/meshalalsanari/riyadh-entertainment)
+- **Data**: [Gyms](https://www.kaggle.com/datasets/meshalalsanari/riyadh-gyms-1-7k)
+- **Data**: [Hospitals and Clinics](https://www.kaggle.com/datasets/meshalalsanari/riyadh-hospitals-and-clinics-719/data)
 
-## 🌞 Future Enhancements
+
+- ## 🌞 Future Enhancements
 
 - AI-driven insights for data visualization.
 - Expansion of service categories.
