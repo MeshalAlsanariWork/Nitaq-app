@@ -105,4 +105,5 @@ We welcome contributions! Feel free to submit pull requests or report any issues
 - **Munirah AlZuman**
 - **Tahani AlOtaibi**
 - **Jumanah AlQurashi**
+- **linktre URL:**: [linktree](https://linktr.ee/Netaq)
 
