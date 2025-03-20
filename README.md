@@ -40,6 +40,7 @@ Extracting data from Google Maps API to collect relevant details for real estate
 ### 🏠 Data Storage
 - Raw data stored in `Riyadh_data`.
 - Cleaned and structured data stored in `Cleaned/Original_data.rar`.
+- Analyzed in `Nitaq_EDA.ipynb`
 - Ensures efficient retrieval and analysis.
 
 **Data categories include:**
