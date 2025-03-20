@@ -38,13 +38,11 @@ streamlit run app.py
 Extracting data from Google Maps API to collect relevant details for real estate insights.Includes information on nearby restaurants, markets, and services.**Data points collected:** Location coordinates, service ratings, reviews, business categories.
 
 ### 🏠 Data Storage
-
 - Raw data stored in `Riyadh_data`.
 - Cleaned and structured data stored in `Cleaned/Original_data.rar`.
 - Ensures efficient retrieval and analysis.
 
 **Data categories include:**
-
 - Bus Stops
 - Cafes & Bakeries
 - Airbnb Listings
@@ -62,15 +60,12 @@ Extracting data from Google Maps API to collect relevant details for real estate
 Analyzed in `Nitaq_EDA.ipynb`.Key insights derived from real estate trends, service distributions, and user preferences.Includes data visualization and statistical summaries.
 
 ### 🧪 Data Processing Pipeline
-
 1. **Data Collection**: Extracting information via APIs and web scraping.
 2. **Data Cleaning**: Handling missing values, duplicates, and formatting inconsistencies.
-3. **Feature Engineering**: Creating meaningful features for analysis and visualization.
-4. **EDA**: Understanding patterns, correlations, and insights.
-5. **Final Storage**: Structured data ready for predictive modeling and application integration.
+3. **EDA**: Understanding patterns, correlations, and insights.
+4. **Final Storage**: Structured data ready for predictive modeling and application integration.
 
 ## 🚀 Next Steps
-
 - Implement ML models for improved recommendations.
 - Optimize database for efficient querying.
 - Enhance the user interface (UI) for a smoother and more engaging user experience.
@@ -85,21 +80,24 @@ Analyzed in `Nitaq_EDA.ipynb`.Key insights derived from real estate trends, serv
 - **Data**: [Entertainment](https://www.kaggle.com/datasets/meshalalsanari/riyadh-entertainment)
 - **Data**: [Gyms](https://www.kaggle.com/datasets/meshalalsanari/riyadh-gyms-1-7k)
 - **Data**: [Hospitals and Clinics](https://www.kaggle.com/datasets/meshalalsanari/riyadh-hospitals-and-clinics-719/data)
+- **Data**: [Metro Stations](https://www.kaggle.com/datasets/meshalalsanari/riyadh-metro-stations)
+- **Data**: [Restaurants](https://www.kaggle.com/datasets/meshalalsanari/riyadh-restaurants/data)
+- **Data**: [SuperMarker and Groceries](https://www.kaggle.com/datasets/meshalalsanari/riyadh-supermarket-and-groceries/data)
+- **Data**: [Pharamcies](https://www.kaggle.com/datasets/meshalalsanari/riyadh-pharmacies/data)
+- **Data**: [Mall](https://www.kaggle.com/datasets/meshalalsanari/riyadh-mall/data)
+- **Data**: Airbnb containted in Data Stroage folder.
 
-
+  
 - ## 🌞 Future Enhancements
-
 - AI-driven insights for data visualization.
 - Expansion of service categories.
 - Machine learning models for personalized recommendations.
 - Add More Airbnb services 
 
 ## 🤝 Contribution
-
 We welcome contributions! Feel free to submit pull requests or report any issues.
 
 ## 💡 Contributors
-
 - **Meshal Alsanari**
 - **Manar AlShaykh**
 - **Munirah AlZuman**
