@@ -15,42 +15,59 @@ st.set_page_config(
 )
 
 
-# 2) Custom CSS for Styling
 st.markdown(
     """
     <style>
-    /* Make sidebar background light */
+    /* Sidebar Styling */
     [data-testid="stSidebar"] {
-        background-color: #F5F5F5;
+        background-color: #F5F1E6; /* Light beige */
+        padding: 20px;
     }
-    /* Make sidebar scrollable if content is long */
     [data-testid="stSidebar"] > div:first-child {
         overflow-y: auto;
         height: 100%;
     }
-    /* Adjust main content padding */
-    .css-18e3th9 {
-        padding: 2rem 4rem;
+
+    /* Main Content Styling */
+    .main-content {
+        background-color: #8B4513; /* Warm brown */
+        padding: 3rem;
+        border-radius: 10px;
+        color: #8B4513;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
-    /* Headings color */
-    h1, h2, h3, h4 {
-        color: #2C3E50;
+
+    .main-content h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        color: #8B4513; 
     }
+    .main-content p {
+        font-size: 1.2rem;
+        color: #F5F1E6; /* Beige */
+        line-height: 1.6;
+    }
+    
+    /* Stats Box Styling */
     .stats-box {
-        background-color: #f0e5d8; /* Beige color */
+        background-color: #E8D7C0; /* Softer beige */
         padding: 15px;
         margin: 10px;
-        border-radius: 5px;
+        border-radius: 10px;
         display: inline-block;
         width: 30%;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
     }
     .stats-icon {
         font-size: 2rem;
+        color: #4F3824; /* Dark brown */
     }
-    /* Button styles */
+    
+    /* Button Styling */
     .stButton>button {
-        background-color: #8D6E63;
+        background-color: #A88C69; /* Earthy brown */
         color: white;
         font-size: 16px;
         padding: 10px 20px;
@@ -60,67 +77,18 @@ st.markdown(
         margin-bottom: 10px;
     }
     .stButton>button:hover {
-        background-color: #6D4C41;
+        background-color: #8B6E50; /* Darker brown */
     }
     
-    /* Custom styling for search options in sidebar */
-    .sidebar .stWrite {
-        color: #5A3E36;  /* Brown color */
-        font-size: 16px;
-    }
-    
-    .sidebar .stButton button {
-        color: #9C27B0; /* Purple color */
-    }
-    
-    /* Sidebar section title color */
-    .sidebar .stSidebarHeader h2 {
-        color: #2C3E50; /* Darker color for better visibility */
-    }
-    
-    /* Sidebar labels */
-    .sidebar label {
-        color: #2C3E50; /* Dark text for contrast */
-    }
-
-    /* Professional Style for Main Content */
-    .main-content {
-        background-color: #2C3E50;
-        padding: 3rem;
-        border-radius: 10px;
-        color: #ffffff;
-        text-align: center;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-
-    /* Heading Style */
-    .main-content h1 {
-        font-size: 3.5rem;
-        font-weight: bold;
-        margin-bottom: 20px;
-    }
-
-    /* Paragraph Style */
-    .main-content p {
-        font-size: 1.2rem;
-        color: #bdc3c7;
-        line-height: 1.6;
-    }
-    
-    /* Sidebar input field styling */
-    .stNumberInput, .stMultiselect, .stTextInput {
-        background-color: #F5F5F5;
-        color: #2C3E50;
-        border-radius: 5px;
-    }
-
-    .stNumberInput input {
-        color: #2C3E50;
+    /* Sidebar Elements */
+    .sidebar label, .sidebar h2 {
+        color: #4F3824; /* Dark brown */
     }
     </style>
     """,
     unsafe_allow_html=True,
 )
+
 
 # 3) Title & Logo (Main Area)
 st.markdown(
@@ -130,20 +98,42 @@ st.markdown(
 
 st.markdown(
     """
+    <style>
+    .main-content {
+        background-color: #F5F1E6; /* Warm brown */
+        padding: 3rem;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .centered-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+    }
+    </style>
+
     <div class='main-content'>
-    <p style="font-size: 1.5rem; font-weight: bold;">مرحبًا بك في تطبيق <strong>نِطاق</strong>!</p>
-    <p>نساعدك في استكشاف الرياض والعثور على النّـطاق المثالي الذي يناسبك، بناءً على المعالم والخدمات القريبة منك.</p>
-    <p>حدّد خياراتك من القائمة اليسرى، ثم قم بتحديد موقعك على الخريطة أو تكبيرها لاختيار الموقع المفضل لديك. 
-    بعد ذلك، اضغط على زر "<em>تأكيد الموقع</em>" في الأسفل لإكمال العملية.</p>
-    <p>بعد تأكيد الموقع، سنقوم بالخطوات التالية:</p>
-    <ul>
-        <li>سنريك تحليل مدروس للنّطاق</li>
-        <li>سنقترح عليك الشقق المتاحة للإيجار في نِطاقك</li>
+    <p style="font-size: 1.8rem; font-weight: bold; color: #8B4513;">مرحبًا بك في تطبيق <strong>نِطاق</strong>!</p>
+    <p style="font-size: 1.3rem; color: #5A3E1B;">نساعدك في استكشاف الرياض والعثور على النّـطاق المثالي الذي يناسبك، بناءً على المعالم والخدمات القريبة منك.</p>
+    <p style="font-size: 1.3rem; color: #5A3E1B;">حدد موقعك على الخريطة بتكبيرها أو تحريك المؤشّر لاختيار الموقع الذي تريده.</p>
+    <p style="font-size: 1.3rem; color: #5A3E1B;">بعد ذلك، اختر نوع الخدمة/الخدمات لإكمال العملية.</p>
+
+    <div style="border-bottom: 2px solid #8B4513; width: 60%; margin: 30px auto;"></div>
+
+    <p style="font-size: 1.8rem; font-weight: bold; color: #8B4513;">بعد اختيار الموقع والخدمات، سنقوم بالخطوات التالية:</p>
+
+    <ul class="centered-list">
+        <li style="font-size: 1.3rem;">سنريك تحليل مدروس للنّطاق المُختار</li>
+        <li style="font-size: 1.3rem;">سنقترح عليك الشقق المتاحة للإيجار في نِطاقك</li>
     </ul>
     </div>
     """,
     unsafe_allow_html=True
 )
+
 
 
 
@@ -166,7 +156,6 @@ file_path = "Riyadh_data.csv"
 try:
     places_df = load_places_data(file_path)
     places_df_v2 = load_places_data(file_path)
-    st.success("تم تحميل بيانات الخدمات بنجاح!")
 except Exception as e:
     st.error(f"حدث خطأ أثناء تحميل الملف: {e}")
     st.stop()
@@ -200,8 +189,8 @@ places_df["Category"] = places_df["Category"].replace(arabic_mapping)
 with st.sidebar:
     st.image('logo.png', width=400)  # Adjust width to make the logo size appropriate
 
-    st.markdown("<h2 style='color: brown;'>خيارات البحث 🔍</h2>", unsafe_allow_html=True)
-    st.write("<span style='color: #6B4F31;'>اِختـر فِئـاتَـك المفضّلـة عند السكن *من هنــا* ⬇️</span>", unsafe_allow_html=True)
+    st.markdown("<h2 style='color: #8B4513;'>خيارات البحث 🔍</h2>", unsafe_allow_html=True)
+    st.write("اختر الفئات المفضلة عند السكن من هنا ⬇️")
     
     # Radius selection using a slider
     radius_km = st.slider("اختر نصف القطر (كم):", min_value=0.5, max_value=15.0, value=5.0, step=0.5)
@@ -219,7 +208,14 @@ with st.sidebar:
 
 
 def main():
-    st.title("خريطة تفاعلية للخدمات (ألوان وأيقونات مميزة)")
+    st.markdown(
+    """
+    <h1 style="text-align: center; color: black;">
+📍 خريطة للخدمات – دليلك الذكي لإكتشاف النطاق الأفضل  
+    </h1>
+    """,
+    unsafe_allow_html=True
+)
 
 
     # Define improved marker colors and icons for each category
@@ -328,8 +324,10 @@ def main():
                     icon=folium.Icon(color=style["color"], icon=style["icon"], prefix="fa")
                 ).add_to(m)
 
-    # Display the map and capture user clicks
-    returned_data = st_folium(m, width=1000, height=1000, key="map")
+    col1, col2, col3 = st.columns([1, 2, 1])  # Middle column is wider
+
+    with col2:  # Put the map in the center column
+        returned_data = st_folium(m, width=1000, height=700, key="map")
 
     
 
@@ -946,7 +944,10 @@ def main():
         nearby_apartments = df_apartments.iloc[nearest_indices].drop_duplicates(subset=["room_id"])
 
         if not nearby_apartments.empty:
-            st.write("### 🏠 الشقق القريبة من الموقع المختار")
+            st.write(    """
+    <h3 style="color: black; display: inline;">🏠 الشقق القريبة من الموقع المختار</h3>
+    """,unsafe_allow_html=True)
+            
             st.dataframe(nearby_apartments[['name', 'price_per_month', 'rating', 'URL']], use_container_width=True)
 
             # تعريف خريطة Folium جديدة مع التركيز على الموقع المختار
@@ -984,5 +985,16 @@ def main():
         else:
             st.warning("لم يتم العثور على شقق بالقرب من الموقع المختار. جرب توسيع نطاق البحث.")
 
+        st.markdown(
+            """
+            <p style='text-align: center; color: #7F8C8D; font-size: 1rem;'>
+            تم تطوير هذا التطبيق بواسطة <strong>نِـطــاق</strong> | 
+            أكاديمية طويق | 
+            <strong>Data Science and Machine Learning Bootcamp</strong> | 
+            Tuwaiq Academy 2025
+            </p>
+            """,
+            unsafe_allow_html=True
+        )
 if __name__ == "__main__":
     main()
