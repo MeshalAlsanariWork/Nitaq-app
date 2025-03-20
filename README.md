@@ -57,7 +57,7 @@ Extracting data from Google Maps API to collect relevant details for real estate
 
 ### 📊 Exploratory Data Analysis (EDA)
 
-Analyzed in `Nitaq_EDA.ipynb`.Key insights derived from real estate trends, service distributions, and user preferences.Includes data visualization and statistical summaries.
+Analyzed in `Nitaq_EDA.ipynb` in data storage.Key insights derived from real estate trends, service distributions, and user preferences.Includes data visualization and statistical summaries.
 
 ### 🧪 Data Processing Pipeline
 1. **Data Collection**: Extracting information via APIs and web scraping.
